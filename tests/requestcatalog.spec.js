@@ -1,18 +1,9 @@
-import { test } from "@playwright/test";
-import LoginPage from "../pages/LoginPage";
-import BasePage from "../base/BasePage";
 import HomePage from "../pages/HomePage";
+import {test} from "./basetest.spec"
 
-test.beforeEach(async ({ page }) => {
-  const loginPage = new LoginPage(page);
-  await loginPage.navigateTo("http://leaftaps.com/opentaps/control/login");
-  const dashBoardPage = await loginPage.login("DemoCsr", "crmsfa");
-  await dashBoardPage.verifyLoginSuccess();
-  await dashBoardPage.clickCrmSfaLink();
-  
-});
 
-test("Create a Request Catalog", async ({ page }) => {
+
+test("Create a Request Catalog", async ({ page, dashboardPage }) => {
   const homePage = new HomePage(page);
   await homePage.clickMainLeads();
   const requestCatalog = await homePage.clickRequestCatalogButton();
@@ -25,5 +16,4 @@ test("Create a Request Catalog", async ({ page }) => {
   await requestCatalog.enterPostalCodeExt();
   await requestCatalog.selectCountry();
   await requestCatalog.clickReqCatalogSubmitButton();
-  await page.pause();
 });
