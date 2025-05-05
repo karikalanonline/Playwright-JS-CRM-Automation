@@ -1,6 +1,6 @@
 import Logger from "../utils/Logger";
 
-export default class BasePageUpdated {
+export default class BasePage {
   constructor(page) {
     this.page = page;
   }
