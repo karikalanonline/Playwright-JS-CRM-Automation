@@ -1,11 +1,11 @@
 import{expect} from "@playwright/test";
-import BasePageUpdated from "../base/BasePage";
+import BasePage from "../base/BasePage";
 import Logger from "../utils/Logger";
 import CreateLeadPage from "./CreateLeadPage";
 import FindLeadsPage from "./FindLeadsPage";
 import RequestCatalogPage from "./RequestCatalogPage";
 
-class HomePage extends BasePageUpdated {
+class HomePage extends BasePage {
     constructor(page){
         super(page);
         this.mainLeadButton = 'a[href^="/crmsfa/control/leadsMain"]';
