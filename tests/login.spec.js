@@ -1,5 +1,5 @@
-import { test} from "./basetest.spec";
-import HomePage from "../pages/HomePage";
+import { test} from "../fixtures/basetest.js";
+import HomePage from "../pages/HomePage.js";
 
 
 test("verify the user landed on the home page", async ({ page, dashboardPage }) => {

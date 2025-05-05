@@ -1,5 +1,5 @@
-import HomePage from "../pages/HomePage";
-import { test } from "./basetest.spec";
+import HomePage from "../pages/HomePage.js";
+import { test } from "../fixtures/basetest.js"
 
 test("Create lead in Test Leaf Platform", async ({ page, dashboardPage }) => {
   const homePage = new HomePage(page);
