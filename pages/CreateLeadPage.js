@@ -1,7 +1,7 @@
 import { expect } from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
 import DashboardPage from "./DashboardPage";
-import BasePageUpdated from "../base/BasePage";
+import BasePage from "../base/BasePage";
 import testData from "../data/testData";
 import Logger from "../utils/Logger";
 
