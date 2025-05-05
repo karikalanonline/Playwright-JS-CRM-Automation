@@ -1,7 +1,7 @@
 import { expect } from "@playwright/test";
-import BasePageUpdated from "../base/BasePage";
+import BasePage from "../base/BasePage.js";
 
-class RequestCatalogPage extends BasePageUpdated{
+class RequestCatalogPage extends BasePage {
       constructor(page){
         super(page);
         this.firstName = 'td input[name="firstName"]';
