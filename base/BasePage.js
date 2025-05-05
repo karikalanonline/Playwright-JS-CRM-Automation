@@ -1,4 +1,4 @@
-import Logger from "../utils/Logger";
+import Logger from "../utils/Logger.js";
 
 export default class BasePage {
   constructor(page) {
