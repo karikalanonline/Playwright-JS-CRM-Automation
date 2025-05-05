@@ -5,7 +5,7 @@ import BasePage from "../base/BasePage";
 import testData from "../data/testData";
 import Logger from "../utils/Logger";
 
-class CreateLeadPage extends BasePageUpdated{
+class CreateLeadPage extends BasePage{
     constructor(page){
         super(page);
         this.companyNameField = "#createLeadForm_companyName";
