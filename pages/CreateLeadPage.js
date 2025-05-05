@@ -1,11 +1,11 @@
 import { expect } from "@playwright/test";
-import LoginPage from "../pages/LoginPage";
-import DashboardPage from "./DashboardPage";
-import BasePageUpdated from "../base/BasePage";
-import testData from "../data/testData";
-import Logger from "../utils/Logger";
+import LoginPage from "../pages/LoginPage.js";
+import DashboardPage from "./DashboardPage.js";
+import BasePage from "../base/BasePage.js";
+import testData from "../data/testData.js";
+import Logger from "../utils/Logger.js";
 
-class CreateLeadPage extends BasePageUpdated{
+class CreateLeadPage extends BasePage{
     constructor(page){
         super(page);
         this.companyNameField = "#createLeadForm_companyName";

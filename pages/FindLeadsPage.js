@@ -1,9 +1,9 @@
 import { expect } from "@playwright/test";
-import BasePageUpdated from "../base/BasePage";
+import BasePage from "../base/BasePage";
 import testData from "../data/testData";
 import Logger from "../utils/Logger";
 
-class FindLeadsPage extends BasePageUpdated {
+class FindLeadsPage extends BasePage {
   constructor(page) {
     super(page);
     this.firstName =
