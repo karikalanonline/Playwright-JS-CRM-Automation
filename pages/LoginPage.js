@@ -1,9 +1,9 @@
-import BasePageUpdated from "../base/BasePage.js";
+import BasePage from "../base/BasePage.js";
 import DashboardPage from "../pages/DashboardPage.js";
 import Logger from "../utils/Logger.js";
 
 
-class LoginPage extends BasePageUpdated {
+class LoginPage extends BasePage {
   constructor(page) {
     super(page);
     this.usernameField = "#username";
