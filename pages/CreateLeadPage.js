@@ -1,9 +1,9 @@
 import { expect } from "@playwright/test";
-import LoginPage from "../pages/LoginPage";
-import DashboardPage from "./DashboardPage";
-import BasePage from "../base/BasePage";
-import testData from "../data/testData";
-import Logger from "../utils/Logger";
+import LoginPage from "../pages/LoginPage.js";
+import DashboardPage from "./DashboardPage.js";
+import BasePage from "../base/BasePage.js";
+import testData from "../data/testData.js";
+import Logger from "../utils/Logger.js";
 
 class CreateLeadPage extends BasePage{
     constructor(page){
