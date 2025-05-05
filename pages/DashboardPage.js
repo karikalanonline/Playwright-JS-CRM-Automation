@@ -1,7 +1,7 @@
 import{expect} from '@playwright/test';
-import BasePageUpdated from '../base/BasePage.js';
+import BasePage from '../base/BasePage.js';
 
-class DashboardPage extends BasePageUpdated {
+class DashboardPage extends BasePage {
     constructor(page){
         super(page);
         this.successMessage = this.page.locator('h2', {hasText:"Welcome Demo B2B CSR"})
